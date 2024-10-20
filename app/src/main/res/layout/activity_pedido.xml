@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".PedidoActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedido"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivNombreCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/perfil"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNombreCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@id/ivNombreCliente"
+        app:layout_constraintBottom_toBottomOf="@id/ivNombreCliente"
+        app:layout_constraintStart_toEndOf="@id/ivNombreCliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Nombre Cliente"/>
+
+    <ImageView
+        android:id="@+id/ivNumeroCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/telefono"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/ivNombreCliente"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNumeroCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@id/ivNumeroCliente"
+        app:layout_constraintBottom_toBottomOf="@id/ivNumeroCliente"
+        app:layout_constraintStart_toEndOf="@id/ivNumeroCliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Numero Cliente"/>
+
+    <ImageView
+        android:id="@+id/ivProductos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/producto"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/ivNumeroCliente"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvProductos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@id/ivProductos"
+        app:layout_constraintBottom_toBottomOf="@id/ivProductos"
+        app:layout_constraintStart_toEndOf="@id/ivProductos"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Productos"/>
+
+    <ImageView
+
+        android:id="@+id/ivUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/perfil"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/ivProductos"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvUbicacion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@id/ivUbicacion"
+        app:layout_constraintBottom_toBottomOf="@id/ivUbicacion"
+        app:layout_constraintStart_toEndOf="@id/ivUbicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Ubicacion"/>
+
+    <ImageView
+        android:id="@+id/btnLlamar"
+        android:layout_width="115dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/llamar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnWhatsapp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnWhatsapp"
+        android:layout_width="115dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/whatsapp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnMaps"
+        app:layout_constraintStart_toEndOf="@id/btnLlamar" />
+
+    <ImageView
+        android:id="@+id/btnMaps"
+        android:layout_width="115dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/maps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnWhatsapp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
